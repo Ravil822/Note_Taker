@@ -71,7 +71,7 @@ app.use(express.json());
   })[0];
     const target = dataDb.indexOf(delNote);
     // console.log(target);
-    dataDb.splice(target, targetId);
+    dataDb.splice(target, 1);
     let newData = JSON.stringify(dataDb);
     res.json(newData);
   })
